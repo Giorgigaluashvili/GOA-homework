@@ -1,0 +1,11 @@
+print(10 > 5)
+print(20 < 30)
+print(15 >= 10)
+print(20 <= 25)
+print(20 == 20)
+
+print(10 > 15)
+print(15 < 10)
+print(10 <= 5)
+print(20 >= 25)
+print(10 >= 20)
