@@ -6,6 +6,6 @@ if Num1 > Num2:
 else: 
     largest = Num2
     smallest = Num1
-for i in range(smallest, largest, + 1):
+for i in range(smallest, largest):
     print(i)
 
