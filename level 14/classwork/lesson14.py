@@ -1,7 +1,7 @@
-#num = 2
-#while num < 5:
-#    print("Giorgi")
-#    num = num + 1
+# name = 2
+# while name < 5:
+#     print("Hello")
+#     name = name + 1
 
 #---------------------------------------
 
@@ -16,14 +16,14 @@
 #---------------------------------------
 
 #ეს არის პროექტი სახელად Guess Game
-#num = 0 
+# age = 0 
 
-#while num != 7:
-#    num = int(input("enter number: "))
-#    if num == 7:
-#        print("You won!")
-#    else:
-#        print("Try again!")
+# while age != 7:
+#     age = int(input("enter number: "))
+#     if age == 7:
+#         print("You won!")
+#     else:
+#         print("Try again!")
 
 #---------------------------------------
 
