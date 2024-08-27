@@ -1,0 +1,17 @@
+td, th{
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: separate;
+}
+
+tr:nth-child(even) {
+    background-color: wheat
+    color(White red green blue)
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+    color: white;
+}
