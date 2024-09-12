@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #2980b9;
+}
+
+.box:active {
+    background-color: #1c1c1c;
+}
+
+
+.transform-translate {
+    transform: translate(0, 0);
+}
+
+.transform-translate:hover {
+    transform: translate(50px, 50px);
+}
+
+.transform-scale {
+    transform: scale(1);
+}
+
+.transform-scale:hover {
+    transform: scale(1.5);
+}
+
+.transform-rotate {
+    transform: rotate(0deg);
+}
+
+.transform-rotate:hover {
+    transform: rotate(45deg);
+}
+
+.transform-skew {
+    transform: skew(0deg, 0deg);
+}
+
+.transform-skew:hover {
+    transform: skew(20deg, 10deg);
+}
+
+.transform-origin {
+    transform-origin: center;
+}
+
+.transform-origin:hover {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}

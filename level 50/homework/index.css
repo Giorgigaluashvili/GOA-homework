@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(0, 0, 55);
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    background-color: rgb(0, 0, 120);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #3b3a3a;
+}
+
+.card-description {
+    color: #646262;
+    margin: 8px 0 16px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.card-stats span {
+    color: #313030;
+}
