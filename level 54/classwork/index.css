@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+
+    animation-name: firstanim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes firstanim{
+    0% {
+        background-color: red;
+    }
+    
+    10% {
+        background-color: gray;
+    }
+    20% {
+        background-color: black;
+    }
+
+    30% {
+        background-color: hotpink;
+    }
+    
+    50% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: aqua;
+    }
+}
