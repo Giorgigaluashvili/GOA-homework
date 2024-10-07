@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Text Example</title>
+</head>
+<body>
+    <p id="myParagraph">sample paragraph text.</p>
+    <button onclick="showText()">Text</button>
+
+    <script>
+        function showText() {
+            const paragraph = document.getElementById("myParagraph");
+
+            const textContent = paragraph.textContent;
+
+            alert(textContent);
+        }
+    </script>
+</body>
+</html>
