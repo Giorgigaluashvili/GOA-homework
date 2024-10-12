@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>რეგისტრაციის ფორმა</h1>
+    <form id="registrationForm">
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">ემაილი:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label>
+            <input type="checkbox" id="terms" name="terms" required>
+            ვეთანხმები პირობებს
+        </label><br><br>
+
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const terms = document.getElementById('terms').checked;
+
+            if (!name || !email || !password) {
+                alert('გთხოვთ შეავსოთ ყველა ველი.');
+                return;
+            }
+
+            if (terms) {
+                console.log(`სახელი: ${name}`);
+                console.log(`ემაილი: ${email}`);
+                console.log(`პაროლი: ${password}`);
+            } else {
+                alert('მონიშნეთ ჩექბოქსი.');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ხართ თუ არა სრულწლოვანი</title>
+</head>
+<body>
+
+    <h1>თქვენი სრულწლოვნების პროგრამა</h1>
+    <input type="number" id="age" placeholder="შეიყვანეთ თქვენი ასაკი" />
+    <button id="checkButton">მოწმება</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('checkButton').addEventListener('click', function() {
+            const age = parseInt(document.getElementById('age').value);
+
+            if (isNaN(age)) {
+                document.getElementById('result').innerText = 'გთხოვთ, შეიყვანეთ კორექტული ასაკი.';
+                return;
+            }
+
+            if (age >= 18) {
+                document.getElementById('result').innerText = 'თქვენი სრულწლოვანი ხართ.';
+            } else {
+                const yearsLeft = 18 - age;
+                document.getElementById('result').innerText = `თქვენ ხართ არასრულწლოვანი. გაკლიათ ${yearsLeft} წელიწადი(ები) სრულწლოვანებისთვის.`;
+            }
+        });
+    </script>
+
+</body>
+</html>
