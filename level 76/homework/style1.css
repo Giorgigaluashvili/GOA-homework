@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.animated-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #3498db; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease; 
+}
+
+.animated-button:hover {
+    transform: scale(1.1); 
+}
+
+.animated-button:active {
+    color: #e74c3c; 
+    letter-spacing: 2px;
+}

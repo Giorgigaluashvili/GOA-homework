@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>მასივები</title>
+</head>
+<body>
+
+  <div class="presentation">
+    <div class="slide active">
+      <h1>სტატიკური vs დინამიური მასივები</h1>
+      <h2>ძირითადი განსხვავებები</h2>
+    </div>
+
+    <div class="slide">
+      <h2>რა არის მასივები?</h2>
+      <p>მასივი არის ელემენტების ერთობლიობა, რომელიც ინახება მეხსიერების მიმდებარე ადგილებში. მასივები გამოიყენება რამდენიმე მნიშვნელობის შესანახად ერთ ცვლადში.</p>
+      <ul>
+        <li><strong>მონაცემთა ტიპი:</strong> შეუძლია შეინახოს იგივე ტიპის მონაცემები.</li>
+        <li><strong>ინდექსირებული წვდომა:</strong> ელემენტებზე წვდომა ხდება ინდექსების გამოყენებით.</li>
+      </ul>
+    </div>
+
+    <div class="slide">
+      <h2>სტატიკური მასივები</h2>
+      <p>სტატიკური მასივი არის მასივი, რომლის ზომა დაფიქსირებულია მისი შექმნის დროს და არ შეიძლება შეიცვალოს გაშვების დროს.</p>
+      <ul>
+        <li><strong>ფიქსირებული ზომა:</strong> მასივის ელემენტების რაოდენობა განისაზღვრება შექმნის დროს.</li>
+        <li><strong>მეხსიერების განაწილება:</strong> მეხსიერება ნაწილდება მიმდებარე ბლოკებში.</li>
+        <li><strong>ეფექტურობა:</strong> უფრო სწრაფი წვდომა, რადგან მეხსიერების განლაგება წინასწარ არის განსაზღვრული.</li>
+        <li><strong>შეზღუდვები:</strong> თუ მასივის ზომა გადაჭარბებულია, მას დინამიურად ვერ მოერგება.</li>
+      </ul>
+      <pre><code>let arr = [10, 20, 30, 40];</code></pre>
+    </div>
+
+    <div class="slide">
+      <h2>დინამიური მასივები</h2>
+      <p>დინამიური მასივი არის მასივი, რომლის ზომა შეიძლება გაიზარდოს ან შემცირდეს მუშაობის დროს, ელემენტების რაოდენობის მიხედვით.</p>
+      <ul>
+        <li><strong>ზომის ცვლა:</strong> მასივი შეიძლება გაფართოვდეს ან დაპატარავდეს, ელემენტების წაშლის და დამატების მიხედვით.</li>
+        <li><strong>მეხსიერების განაწილება:</strong> სისტემას შეუძლია მეხსიერების გადანაწილება ახალი ზომების დასაკმაყოფილებლად</li>
+        <li><strong>მოქნილობა:</strong> იძლევა ნებისმიერი ზომის კორექტირების საშუალებას შეზღუდვების გარეშე.</li>
+      </ul>
+      <pre><code>let arr = [10, 20, 30];</code></pre>
+    </div>
+
+    <div class="slide">
+      <h2>მადლობა ყურადღებისთვის, გაქვთ რაიმე კითხვები?</h2>
+    </div>
+
+    <div class="navigation-buttons">
+      <button id="back" onclick="changeSlide(-1)">back</button>
+      <button id="nextBtn" onclick="changeSlide(1)">Next</button>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function changeSlide(direction) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+      slides[currentSlide].classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

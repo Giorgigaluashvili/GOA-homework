@@ -1,9 +1,9 @@
 def check_even_odd(number):
     if number % 2 == 0:
-        return "ლუწი"
+        return "Even"
     else:
-        return "კენტი"
+        return "Odd"
 
-number = int(input("შეიყვანეთ რიცხვი: "))
+number = int(input("Enter a number: "))
 result = check_even_odd(number)
-print(f"რიცხვი {number} არის: {result}")
+print(f"Number {number} is: {result}")
