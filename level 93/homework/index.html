@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .status {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cookie Clicker Game</h1>
+
+<button id="cookieButton" class="button">Click for Cookies!</button>
+
+<div class="status">
+    <p>Cookies: <span id="cookieCount">0</span></p>
+    <p>Gold: <span id="goldCount">0</span></p>
+</div>
+
+<h2>Purchase Gadgets:</h2>
+<button id="biggerFingerButton" class="button">Buy Bigger Finger (50 gold)</button>
+<button id="betterMinesButton" class="button">Buy Better Mines (100 gold)</button>
+<button id="doubleCookiesButton" class="button">Buy Double Cookies (200 gold)</button>
+
+<div class="status">
+    <p>Bigger Finger Level: <span id="biggerFingerLevel">0</span></p>
+    <p>Better Mines Level: <span id="betterMinesLevel">0</span></p>
+    <p>Double Cookies Active: <span id="doubleCookiesActive">No</span></p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
