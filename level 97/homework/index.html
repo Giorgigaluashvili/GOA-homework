@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #email-list {
+            margin-top: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Email Filter</h1>
+    <label for="subjectFilter">Select Subject: </label>
+    <select id="subjectFilter">
+        <option value="">All</option>
+        <option value="Travel">Travel</option>
+        <option value="Report">Report</option>
+        <option value="Awareness">Awareness</option>
+    </select>
+
+    <h2>Emails</h2>
+    <ul id="email-list"></ul>
+
+    <script>
+        const emails = [
+            { subject: "Travel", content: "Don't forget your tickets", receivedDate: "2024-12-15" },
+            { subject: "Report", content: "Please read the latest report", receivedDate: "2024-12-12" },
+            { subject: "Travel", content: "I have a very good offer", receivedDate: "2024-12-13" },
+            { subject: "Awareness", content: "There may be minor errors", receivedDate: "2024-12-10" }
+        ];
+
+        function filterEmails() {
+            const selectedSubject = document.getElementById('subjectFilter').value;
+            const emailList = document.getElementById('email-list');
+
+            emailList.innerHTML = '';
+
+            let filteredEmails;
+            if (selectedSubject) {
+                filteredEmails = emails.filter(email => email.subject === selectedSubject);
+            } else {
+                filteredEmails = emails;
+            }
+
+            for (const email of filteredEmails) {
+                const li = document.createElement('li');
+                li.textContent = `Subject: ${email.subject}, Content: ${email.content}, Date: ${email.receivedDate}`;
+                emailList.appendChild(li);
+            }
+        }
+
+        document.getElementById('subjectFilter').addEventListener('change', filterEmails);
+
+        filterEmails();
+    </script>
+</body>
+</html>

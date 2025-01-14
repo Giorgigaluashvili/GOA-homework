@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>შეიყვანეთ პირის მონაცემები</h1>
+        <div class="form-group">
+            <label for="firstName">სახელი:</label>
+            <input type="text" id="firstName" placeholder="შეიყვანეთ სახელი">
+        </div>
+        <div class="form-group">
+            <label for="lastName">გვარი:</label>
+            <input type="text" id="lastName" placeholder="შეიყვანეთ გვარი">
+        </div>
+        <div class="form-group">
+            <label for="age">ასაკი:</label>
+            <input type="number" id="age" placeholder="შეიყვანეთ ასაკი">
+        </div>
+        <div class="form-group">
+            <label for="idNumber">პირადი ნომერი:</label>
+            <input type="text" id="idNumber" placeholder="შეიყვანეთ პირადი ნომერი">
+        </div>
+        <div class="form-group">
+            <label for="height">სიმაღლე (სმ):</label>
+            <input type="number" id="height" placeholder="შეიყვანეთ სიმაღლე">
+        </div>
+        <div class="form-group">
+            <label for="description">აღწერა:</label>
+            <textarea id="description" placeholder="შეიყვანეთ აღწერა"></textarea>
+        </div>
+        <button id="addPersonBtn">პიროვნების დამატება</button>
+        
+        <h2>რეგისტრირებული პირები</h2>
+        <div id="peopleList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

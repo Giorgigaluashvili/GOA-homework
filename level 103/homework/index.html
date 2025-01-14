@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Score and Background Game</title>
+</head>
+
+<body>
+    <h1>Welcome to the Guessing Game</h1>
+
+    <div id="login-container">
+        <label for="userName">Enter your name:</label>
+        <input type="text" id="userName" placeholder="Enter your name">
+        <button onclick="saveUserName()">Login</button>
+    </div>
+
+    <div id="game-container" class="game-container" style="display: none;">
+        <h2>Welcome, <span id="userNameDisplay"></span></h2>
+        <div class="score">Score: <span id="score">0</span></div>
+
+        <div class="input-fields">
+            <label for="colorPicker">Pick a background color:</label>
+            <input type="color" id="colorPicker" value="#f0f0f0">
+            <br>
+            <label for="numberGuess">Guess the number: </label>
+            <input type="number" id="numberGuess" placeholder="Enter a number">
+            <button onclick="checkGuess()">Submit Guess</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
