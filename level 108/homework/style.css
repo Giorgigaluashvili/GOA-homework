@@ -1,0 +1,100 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e7c7c, #3b6978);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .price-card {
+    background: linear-gradient(135deg, #ff6f61, #f9a8b1);
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .price-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-header {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .card-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .card-header p {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  
+  .card-header .free-months {
+    font-size: 18px;
+    color: #ffd700;
+    font-weight: 500;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .card-body p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .card-footer {
+    padding: 20px 20px;
+    background-color: #ff6f61;
+    text-align: center;
+  }
+  
+  .card-footer button {
+    background-color: #fff;
+    color: #ff6f61;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card-footer button:hover {
+    background-color: #ff4e48;
+    transform: scale(1.05);
+  }
+  
+  .card-footer button:focus {
+    outline: none;
+  }
+  
