@@ -29,7 +29,7 @@ animal1 = Animal("Leo", 3, "Lion")
 animal2 = Animal("Buddy", 5, "Dog")
 animal3 = Animal("Whiskers", 2, "Cat")
 
-vehicle1 = Vehicle("BMW M3 G80", 2020, "Gray")
+vehicle1 = Vehicle("BMW M3 G80", 2021, "Gray")
 vehicle2 = Vehicle("Ford Mustang", 2018, "Blue")
 vehicle3 = Vehicle("Chevrolet Camaro ZL1", 2016, "Black")
 

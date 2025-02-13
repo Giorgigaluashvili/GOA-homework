@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Book Library</h1>
+        <nav>
+            <ul>
+                <li><a href="#adventure-books">Adventure Books</a></li>
+                <li><a href="#satire-books">Satire Books</a></li>
+                <li><a href="#fantasy-books">Fantasy Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="adventure-books">
+        <h2>Adventure Books</h2>
+        <div class="book" id="adventure-book1">
+            <h3>The Lost Island</h3>
+            <p><strong>Author:</strong> John Doe</p>
+            <p><strong>Setting:</strong> Tropical Island</p>
+            <p><strong>Protagonist:</strong> Jack</p>
+            <button onclick="borrowBook('adventure-book1')">Borrow</button>
+        </div>
+        <div class="book" id="adventure-book2">
+            <h3>Mystery of the Sea</h3>
+            <p><strong>Author:</strong> Jane Smith</p>
+            <p><strong>Setting:</strong> Sea</p>
+            <p><strong>Protagonist:</strong> Sarah</p>
+            <button onclick="borrowBook('adventure-book2')">Borrow</button>
+        </div>
+        <div class="book" id="adventure-book3">
+            <h3>Desert Journey</h3>
+            <p><strong>Author:</strong> David Lee</p>
+            <p><strong>Setting:</strong> Desert</p>
+            <p><strong>Protagonist:</strong> Mike</p>
+            <button onclick="borrowBook('adventure-book3')">Borrow</button>
+        </div>
+    </section>
+
+    <section id="satire-books">
+        <h2>Satire Books</h2>
+        <div class="book">
+            <h3>The Fake World</h3>
+            <p><strong>Author:</strong> Alice Brown</p>
+            <p><strong>Humor Level:</strong> Moderate</p>
+            <button onclick="borrowBook('satire-book1')">Borrow</button>
+        </div>
+        <div class="book">
+            <h3>Social Clowns</h3>
+            <p><strong>Author:</strong> Bob White</p>
+            <p><strong>Humor Level:</strong> High</p>
+            <button onclick="borrowBook('satire-book2')">Borrow</button>
+        </div>
+        <div class="book">
+            <h3>The Big Laugh</h3>
+            <p><strong>Author:</strong> Charlie Black</p>
+            <p><strong>Humor Level:</strong> Low</p>
+            <button onclick="borrowBook('satire-book3')">Borrow</button>
+        </div>
+    </section>
+
+    <section id="fantasy-books">
+        <h2>Fantasy Books</h2>
+        <div class="book">
+            <h3>The Enchanted Forest</h3>
+            <p><strong>Author:</strong> Lily Green</p>
+            <p><strong>Magical Elements:</strong> Wizards, Dragons</p>
+            <button onclick="borrowBook('fantasy-book1')">Borrow</button>
+        </div>
+        <div class="book">
+            <h3>Mystic Realms</h3>
+            <p><strong>Author:</strong> Max Blue</p>
+            <p><strong>Magical Elements:</strong> Elves, Fairies</p>
+            <button onclick="borrowBook('fantasy-book2')">Borrow</button>
+        </div>
+        <div class="book">
+            <h3>The Magic Portal</h3>
+            <p><strong>Author:</strong> Clara Yellow</p>
+            <p><strong>Magical Elements:</strong> Magic Stones, Spells</p>
+            <button onclick="borrowBook('fantasy-book3')">Borrow</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Book Library - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
