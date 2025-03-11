@@ -1,0 +1,13 @@
+def store_student_scores(student_list):
+    student_scores = {}
+    
+    for student in student_list:
+        name, score = student
+        student_scores[name] = score
+    
+    return student_scores
+
+students = [("John", 85), ("Alice", 90), ("Bob", 75)]
+result = store_student_scores(students)
+
+print(result)
